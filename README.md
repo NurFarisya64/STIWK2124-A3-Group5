@@ -1,59 +1,237 @@
-# ArlFrontend
+````md
+# Accessible Reading List (ARL) — Frontend Integration
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+## Course Information
 
-## Development server
+**Course:** STIWK2124 Web Engineering  
+**Semester:** A252 – Feb 2025/2026  
+**Assignment:** Assignment 2 — CLO2: Build the Frontend & Integrate Securely  
+**Lecturer:** Dr. Munya Saleh Saeed Ba Matraf  
 
-To start a local development server, run:
+---
+
+# Project Overview
+
+Accessible Reading List (ARL) is a web application developed using Angular and Spring Boot.  
+This project focuses on integrating the Angular frontend with the backend REST API developed in Assignment 1.
+
+The system allows users to:
+
+- View book list
+- Search books
+- Add books
+- Edit books
+- Delete books
+- Validate forms
+- Connect securely using Basic Authentication
+
+---
+
+# Technologies Used
+
+## Frontend
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Bootstrap
+- Angular HttpClient
+
+## Backend
+- Spring Boot
+- Spring Data JPA
+- MySQL
+
+## Tools
+- Visual Studio Code
+- GitHub
+- Postman
+
+---
+
+# Backend Setup
+
+## 1. Clone Backend Repository
+
+```bash
+git clone <backend-repository-link>
+```
+
+---
+
+## 2. Create Database in MySQL
+
+```sql
+CREATE DATABASE arl_db;
+```
+
+---
+
+## 3. Configure application.properties
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/arl_db
+spring.datasource.username=root
+spring.datasource.password=YOUR_PASSWORD
+```
+
+---
+
+## 4. Run Backend Server
+
+```bash
+mvn spring-boot:run
+```
+
+Backend runs at:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+# Frontend Setup
+
+## 1. Clone Frontend Repository
+
+```bash
+git clone <frontend-repository-link>
+```
+
+---
+
+## 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 3. Run Angular Application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Frontend runs at:
 
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+# API Integration
+
+The Angular frontend communicates with the Spring Boot backend using Angular HttpClient.
+
+Example API endpoint:
+
+```typescript
+http://localhost:8080/api/books
+```
+
+Implemented API operations:
+
+- GET → Retrieve books
+- POST → Add books
+- PUT → Update books
+- DELETE → Remove books
+
+---
+
+# Authentication & Security
+
+Basic Authentication is implemented for protected operations:
+
+- POST
+- PUT
+- DELETE
+
+Public access is allowed for:
+
+- GET requests
+
+CORS configuration is enabled to allow Angular frontend access from:
 
 ```bash
-ng generate --help
+http://localhost:4200
 ```
 
-## Building
+---
 
-To build the project run:
+# Features Implemented
+
+- Book listing
+- Search functionality
+- Add book feature
+- Edit book feature
+- Delete book feature
+- Form validation
+- API error handling
+- Basic Authentication
+- Frontend & backend integration
+
+---
+
+# Screenshots
+
+## Book List
+(Add screenshot here)
+
+---
+
+## Search Function
+(Add screenshot here)
+
+---
+
+## Form Validation
+(Add screenshot here)
+
+---
+
+# Demo Video
+
+Demo video link:
 
 ```bash
-ng build
+(Add Google Drive / YouTube link here)
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+# Group Members
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+| Name | Matric Number |
+|------|------|
+| Your Name | Your Matric Number |
+| Member 2 | Matric Number |
+| Member 3 | Matric Number |
+
+---
+
+# How to Run the Project
+
+1. Start MySQL server
+2. Run Spring Boot backend
+3. Run Angular frontend
+4. Open browser:
 
 ```bash
-ng test
+http://localhost:4200
 ```
 
-## Running end-to-end tests
+5. Test:
+- View books
+- Search books
+- Add/edit/delete books
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+# License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is developed for educational purposes under STIWK2124 Web Engineering.
+````
