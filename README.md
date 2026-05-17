@@ -207,9 +207,11 @@ Demo video link:
 
 | Name | Matric Number |
 |------|------|
-| Your Name | Your Matric Number |
-| Member 2 | Matric Number |
-| Member 3 | Matric Number |
+| NUR FARISYA BINTI AHMAD SHUKRI | 303383 |
+| NUR JUWANA BINTI MOHD YUNUS | 307864 |
+| SITI NUR IRDINA BINTI AHMAD SUKARDI | 307504 |
+| ALIYYAH SAFIAH BINTI HAZLY | 305604 |
+| NUR SYATHIRAH BINTI MOHD FAIZATUL IZHAM | 305766 |
 
 ---
 
