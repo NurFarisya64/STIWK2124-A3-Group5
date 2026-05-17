@@ -1,0 +1,92 @@
+<div class="container">
+
+  <div class="header">
+    <h1>📚 Book Management</h1>
+
+    <button routerLink="/books/new" class="add-btn">
+      + Add Book
+    </button>
+  </div>
+
+  <div class="top-bar">
+
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search book title..."
+      (input)="search()"
+      class="search-box"
+    />
+
+    <button (click)="speakList()" class="speak-btn">
+      🔊 Read Books
+    </button>
+
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    Loading books...
+  </div>
+
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+
+  <table *ngIf="!loading" class="book-table">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let book of paginatedBooks">
+
+        <td>{{ book.id }}</td>
+        <td><strong>{{ book.title }}</strong></td>
+        <td>{{ book.author }}</td>
+        <td><span class="category-badge">{{ book.category }}</span></td>
+        <td class="desc-cell">{{ book.description }}</td>
+
+        <td>
+          <div class="action-buttons">
+            <button
+              [routerLink]="['/books/edit', book.id]"
+              class="edit-btn"
+            >
+              Edit
+            </button>
+
+            <button
+              (click)="deleteBook(book.id)"
+              class="delete-btn"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <div class="pagination">
+
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+
+    <span>Page {{ currentPage }}</span>
+
+    <button (click)="nextPage()" [disabled]="(currentPage * pageSize) >= filteredBooks.length">Next</button>
+
+  </div>
+
+</div>
