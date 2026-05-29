@@ -179,27 +179,24 @@ http://localhost:4200
 # Screenshots
 
 ## Book List
-(Add screenshot here)
+<img width="1920" height="1080" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/5d6c8e3b-80cd-4511-a2ce-dd99a3a1b423" />
 
 ---
 
 ## Search Function
-(Add screenshot here)
+<img width="1920" height="1080" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/90a418a2-3e12-41dc-80b8-0b850e95d4ee" />
 
 ---
 
 ## Form Validation
-(Add screenshot here)
+<img width="1920" height="1080" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/9cb83f38-c53e-4f0b-94d3-3f9c8764a948" />
 
 ---
 
 # Demo Video
 
 Demo video link:
-
-```bash
-(Add Google Drive / YouTube link here)
-```
+https://youtu.be/SZfL9JkXZLs?si=Lo8Z-ZtcKJqUZn25
 
 ---
 
