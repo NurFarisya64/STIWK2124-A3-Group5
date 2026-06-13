@@ -24,7 +24,7 @@ h2 {
 
 label {
   font-weight: bold;
-  color: #ef4444; /* Matches the red labels in your UI screenshot */
+  color: #ef4444;
   display: block;
   margin-bottom: 8px;
 }
